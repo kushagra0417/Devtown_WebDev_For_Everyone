@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms And Input</title>
+</head>
+<body>
+    <h2>HTML Form </h2>
+    <form action="mybackend.php">
+        <label for="kname"> Name:</label>
+        <div>
+         <input type="text" name="myName" id="kname">
+        </div>
+        <br>
+        <div>
+            phoneNumber: <input type="text" name="myPhoneNumber">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail" >
+        </div>
+        <br>
+        <div>
+            Date of birth: <input type="date" name="myDOB" >
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myDOB" >
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender" > Female <input type="radio" name="myGender" > Other <input type="radio" name="myGender" >
+        </div>
+        <br>
+        <div>
+           Accept the Terms and Condition: <input type="checkbox" name="myTerms&condition" checked >
+        </div>
+        <br>
+        <div>
+           Address: <textarea name="myAddress"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+          Tour:<select name="myTour">
+            <option value="USA" >USA</option>
+            <option value="SA">South Africa</option>
+            <option value="India" selected>India</option>
+          </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset">
+        </div>
+       
+    </form>
+</body>
+</html>

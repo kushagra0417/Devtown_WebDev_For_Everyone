@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 2rem;
+            /* grid-column-gap: 7rem;
+            grid-row-gap: 1rem; */
+
+        }
+        .box{
+          background-color: rgb(201, 172, 229);
+          border: 2px solid black;
+          color: black;
+          padding: 23px;
+       
+
+        }
+
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* Short Hand for the row and column span */
+            grid-column: 1 /span 2;
+            grid-row:1 / span 2;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">This is a Box-1</div>
+        <div class="box" id="box-2">This is a Box-2</div>
+        <div class="box" id="box-3">This is a Box-3</div>
+        <div class="box" id="box-4">This is a Box-4</div>
+        <div class="box" id="box-5">This is a Box-5</div>
+        <div class="box" id="box-6">This is a Box-6</div>
+        <div class="box" id="box-7">This is a Box-7</div>
+        <div class="box" id="box-8">This is a Box-8</div>
+        <div class="box" id="box-6">This is a Box-6</div>
+        <div class="box" id="box-7">This is a Box-7</div>
+        <div class="box" id="box-8">This is a Box-8</div>
+    </div>
+</body>
+</html>

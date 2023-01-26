@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+      }
+
+      nav {
+        grid-area: navbar;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+      }
+      body {
+        background-color: blueviolet;
+      }
+      .brd{
+        background-color: wheat;
+        padding: 23px;
+        border: 2px solid black;
+      }
+      span{
+        display: block;
+        padding: 4px;
+        text-align: center;
+      }
+      @media (min-width: 640px) {
+        body {
+          background-color: red;
+        }
+        .container{
+        
+            grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+
+        }
+      }
+
+      @media (min-width: 768px) {
+        body {
+          background-color: green;
+        }
+        .container{
+            grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section section"
+          "aside aside aside aside"
+          "footer footer footer footer";
+        }
+      }
+
+      @media (min-width: 1024px) {
+        body {
+          background-color: blue;
+        }
+        .container{
+            grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+        }
+        span{
+        display: inline;
+        padding: 4px;
+       
+      }
+      }
+
+      @media (min-width: 1200px) {
+        body {
+          background-color: yellow;
+        }
+        .container{
+            grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="brd">
+    <span>
+        Home
+    </span><span>
+        About Us
+    </span><span>
+        Contact Us
+    </span><span>
+        Services
+    </span><span>
+        More
+    </span>
+    </nav>
+      <section class="brd">This is a Grid Class</section>
+      <aside class="brd">This class is conduction on Youtube</aside>
+      <footer class="brd">Copy Right Devtown@</footer>
+    </div>
+  </body>
+</html>

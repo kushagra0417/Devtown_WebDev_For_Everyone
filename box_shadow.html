@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        padding: 20px 12px;
+        margin: 20px 12px;
+        /* border: 2px solid red; */
+        background-color: aqua;
+        /* box-shadow: 20px 30px yellow;
+        /* box-shadow: -20px -30px yellow; 
+        box-shadow: 20px 30px 30px yellow;
+        box-shadow: 20px 30px 0px 30px yellow ; */
+        box-shadow: inset 20px 30px yellow;
+        box-shadow: 20px 0px yellow, 0px 10px red;
+        box-shadow: 20px 30px 30px 30px rgb(100, 200, 150);
+     /* box-shadow: X-offset Y-offset Blur Radius Spread Radius color */
+      }
+
+      .card h1{
+ /* text-shadow: X-offset Y-offset Blur Radius  color */
+
+        text-shadow: 3px 2px red;
+        text-shadow: 3px 2px 2px red;
+        text-shadow: 3px 2px 3px rgb(100, 200, 150);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h1>Card 1</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+          aliquid dolorum qui corporis voluptas molestiae provident quam
+          expedita debitis, perferendis magni. Debitis quas porro ratione dicta
+          necessitatibus maxime eum numquam blanditiis? Ut, optio nesciunt.
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h1>Card 2</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+          aliquid dolorum qui corporis voluptas molestiae provident quam
+          expedita debitis, perferendis magni. Debitis quas porro ratione dicta
+          necessitatibus maxime eum numquam blanditiis? Ut, optio nesciunt.
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h1>Card 3</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+          aliquid dolorum qui corporis voluptas molestiae provident quam
+          expedita debitis, perferendis magni. Debitis quas porro ratione dicta
+          necessitatibus maxime eum numquam blanditiis? Ut, optio nesciunt.
+        </p>
+      </div>
+      <div class="card" id="card-4">
+        <h1>Card 4</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
+          aliquid dolorum qui corporis voluptas molestiae provident quam
+          expedita debitis, perferendis magni. Debitis quas porro ratione dicta
+          necessitatibus maxime eum numquam blanditiis? Ut, optio nesciunt.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <div class="container">
+        <p>Devtown Arrow function Class</p>
+    </div>
+    <script>
+        // function decleration
+        // function greet(){
+        //     console.log("Good Morning Students")
+        // }
+
+        //arrow function
+        let greet=()=>{
+            console.log("Good Morning Students")
+        }
+
+        let sum=(a,b)=> a+b
+
+        let bytwo= a => a/2;
+        
+        setTimeout(()=>{
+          console.log("This is a devtown class")
+        },3000)
+        greet()
+
+        let obj ={
+            greet:" welcome to devtown",
+            names:["kush","Vikrant","Khalid","Sam"],
+            speek(){
+                this.names.forEach((student)=>{
+                      console.log(student+ this.greet)
+                })
+            }
+
+       
+        }
+        obj.speek()
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pesudo class</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,100;0,400;0,500;1,800&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+           
+        }
+        header::before{
+            content: "";
+            background: url("https://images.unsplash.com/reserve/5okFAcEQM6YzgbICsGDM_10397138_742161639184668_9044730673519805220_o.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1494&q=80") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top:0;
+            left: 0;
+            opacity: 0.4;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            height: 344px;
+           
+            margin: 3px 230px;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Sofia Sans', sans-serif;
+
+
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        #second{
+            text-align: center;
+        }
+
+        /* section::after{
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi aperiam nam vero eaque architecto nobis ipsum. Non asperiores itaque temporibus mollitia, eum architecto velit, quam aperiam libero quos doloremque in, totam alias. Mollitia?";
+            color: red;
+            padding: 10px 20px;
+            text-align: center;
+        } */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                    <li class="item">Home </li>
+                    <li class="item">About Us</li>
+                    <li class="item">Services</li>
+                    <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        
+        
+    </header>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique excepturi aperiam nam vero eaque architecto nobis ipsum. Non asperiores itaque temporibus mollitia, eum architecto velit, quam aperiam libero quos doloremque in, totam alias. Mollitia?</p> -->
+    <section>
+        <!-- <h2>Below this is the Welcome part</h2> -->
+        <h1>Welcome to Devtown</h1>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aspernatur voluptate deleniti aliquid. Eum vero earum quod itaque labore dicta voluptas natus atque quo sequi eos, ut delectus sapiente pariatur, magni assumenda obcaecati qui?</p>
+    </section>
+</body>
+</html>

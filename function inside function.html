@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function inside function</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit suscipit impedit, et deleniti laboriosam velit molestiae excepturi quae mollitia libero voluptate odio totam. Quibusdam quas expedita dolores doloremque ducimus quo nostrum, sint inventore quod?</p>
+    <script>
+        function h(){
+            console.log("h function is called")
+        }
+        function g(){
+            console.log("g function is called")
+            h()
+        }
+        function f(){
+            console.log("f function is called")
+            g()
+        }
+        f()
+    </script>
+</body>
+</html>
