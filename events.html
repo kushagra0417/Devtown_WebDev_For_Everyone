@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Click Event</title>
+    <style>
+        #btn{
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Devtown Class</h1>
+        <p  id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus porro accusantium, facilis vitae mollitia laboriosam eveniet, consequatur quia odit cum assumenda saepe? Itaque tenetur cum consectetur, quis hic odit quisquam natus qui dolorum quos tempore inventore consequuntur, placeat deserunt esse a aut eos corporis perspiciatis, rerum laboriosam aliquid non aliquam provident. Neque blanditiis repellat aliquam aspernatur, quo recusandae delectus fugiat totam odio nisi culpa vel magnam nostrum inventore facere unde. Odio illo harum praesentium omnis ea inventore cumque odit ducimus minus, quo quos distinctio dolorum blanditiis in id voluptatem facere magni facilis eos quas, recusandae provident, ut vitae quibusdam. Id, deleniti dolorum quo provident, veniam sed ducimus quis rem perspiciatis ipsam suscipit unde fugit? Laudantium vero commodi doloremque nihil quas modi doloribus! Nemo voluptate debitis esse quo ad iure delectus labore deserunt iste molestias! Iusto, tenetur unde dignissimos quam repudiandae explicabo, sed sint deserunt soluta a saepe molestiae delectus itaque excepturi non nisi sit esse architecto accusantium minima dolore ullam maxime rem. Eveniet dolore eius vitae magni blanditiis ut exercitationem corporis fugit quam eligendi amet harum repellat tempore officiis recusandae aperiam, animi expedita velit rem asperiores dolores explicabo non vel. Mollitia odit eligendi, incidunt vel voluptatem vero provident tempore quisquam, fuga deleniti maiores ratione officia minus, adipisci perspiciatis repudiandae voluptate dolorem? Id cupiditate, esse sapiente quo voluptas officia tempore earum. Aperiam quae nisi commodi reprehenderit, nemo soluta ea non eum tempora ducimus repellendus.</p>
+
+        <button id="btn" onClick="toggel()">Hide</button>
+        
+    </div>
+    
+    <script>
+   function toggel(){
+    let btn=document.getElementById('btn');
+    let para=document.getElementById('para')
+    if(para.style.display != 'none'){
+    para.style.display='none';
+    btn.innerHTML="Show"
+    }
+    else{
+        para.style.display='block';
+    btn.innerHTML="Hide"
+    }
+
+   }
+    </script>
+
+    <!-- events is browser or js
+
+    click 
+    mouserover/mouseout 
+    mouseup/mousedown
+
+
+    forms 
+
+    submit 
+    focus 
+     -->
+
+
+
+
+</body>
+</html>

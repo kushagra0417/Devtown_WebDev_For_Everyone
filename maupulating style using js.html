@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manupulating CSS Using JS</title>
+    <style>
+     .container{
+        border: 2px solid black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: black;
+        align-items: center;
+     }
+     #heading{
+        color: red;
+        background-color: red;
+     }
+
+     .abc{
+        display: none;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="heading" class="xyz abz">This is Devtown Class</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam illo hic molestiae eveniet commodi exercitationem reprehenderit, veniam eaque voluptas quod enim modi reiciendis quasi itaque voluptatum. Quam, officiis. Sint, earum ea accusamus veniam nihil molestias, consequuntur tenetur, officia quibusdam soluta facilis odit ullam magni cupiditate. Praesentium dignissimos nesciunt eos dolor alias consectetur. Ab quidem nisi non, possimus laboriosam vero iure dignissimos. Explicabo consequatur nisi fugit deleniti mollitia voluptates blanditiis dolore facere. Culpa, exercitationem adipisci provident inventore perferendis nihil alias. Voluptatibus fugiat velit est magni rem iste voluptatem asperiores, molestiae fuga incidunt blanditiis cupiditate totam ut obcaecati magnam reiciendis quod.</p>
+    </div>
+
+    <script>
+        // to manupulate your style we use there methods
+        // 1)Style
+        // 2)className
+        // 3)classList
+
+        let heading=document.getElementById('heading');
+
+        //  console.log(heading.style.color) 
+         heading.style.color="red";
+
+         heading.style.backgroundColor="white"
+
+         console.log(heading.classList)
+
+         heading.classList.add('abz','efg')
+
+         console.log(heading.classList)
+
+
+    </script>
+</body>
+</html>
